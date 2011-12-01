@@ -22,7 +22,7 @@
             $i++;
         }
         $template->PlugIn(TBS_INSTALL, TBS_CACHE, './cache', '*.tmp');
-        $template->PlugIn(TBS_CACHE, $chpname, 3); // salvez in cache pentru 5 minute
+        $template->PlugIn(TBS_CACHE, $chpname, 1); // salvez in cache pentru 5 minute
     }
     else {
         $template->PlugIn(TBS_INSTALL, TBS_CACHE, './cache', '*.tmp');

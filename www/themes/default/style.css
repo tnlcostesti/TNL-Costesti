@@ -1,4 +1,57 @@
 body {
     font-family: Calibri;
     background-color: #F6F6F6;
+    margin: 0 auto;
+}
+.wrapper {
+    min-width: 940px;
+    max-width: 940px;
+    margin: 0 auto;
+}
+#header{
+    height: 150px;
+    box-shadow: 0px 0px 10px blueviolet;
+    border-radius:0px 0px 5px 5px;
+}
+#logo {
+    width: 739px;
+    height:100%;
+    display: inline-block;
+    background-color: #0090B4;
+    border-radius: 0px 0px 0px 5px;
+}
+
+#menu {
+    float: right;
+    width: 200px;
+    height:100%;
+    border-left: 1px solid darkblue;
+    background-color: #0090B4;
+    border-radius: 0px 0px 5px 0px;
+}
+#menu ul{
+    margin: 0;
+    padding: 0px;
+}
+
+#menu ul li{
+   color: #FFDE00;
+   text-shadow:0px 0px 2px yellow;
+    font-size: 12px;
+    font-family:Verdana;
+    /* text-transform: uppercase; */
+    font-variant: small-caps;
+    border-bottom: 1px dashed darkblue;
+    list-style-type: none;
+    margin: 0;
+    padding:6px;
+    padding-left: 28px !important;
+}
+
+.logoleft{
+    background: url("../../logo.png");
+    position: fixed;
+    width:178px;
+    height:141px;
+    margin:0px 0px 0px 162px;
 }
