@@ -1,0 +1,10 @@
+RewriteEngine on
+RewriteBase /
+
+RewriteRule ^(os|blog|cv|servicii|portofoliu|feedback)/?$ ./index.php?run=$1 [L,QSA]
+
+RewriteRule ^([-_!~*'()$a-zA-Z0-9]+)/([-_!~*'()$a-zA-Z0-9]+).html ./index.php?run=$1&page=$2 [L,QSA]
+RewriteRule ^([-_!~*'()$a-zA-Z0-9]+).html   ./index.php?page=$1
+
+RewriteRule ^([-_!~*'()$a-zA-Z0-9]+)-([$0-9]+)  ./index.php?$1=$2
+RewriteRule ^([-_!~*'()$a-zA-Z0-9]+)/([-_!~*'()$a-zA-Z0-9]+)-([$0-9]+)  ./index.php?run=$1&$2=$3
